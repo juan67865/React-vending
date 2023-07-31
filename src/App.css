@@ -1,38 +1,75 @@
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+/* Message.css */
+.Message {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: solid black 2px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* VendingMachine.css */
+.VendingMachine {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-size: cover;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.VendingMachine h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.VendingMachine h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* Soda.css */
+.Soda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.Soda img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+/* Sardines.css */
+.Sardines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.Sardines img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+/* Chips.css */
+.Chips {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.Chips img {
+  width: 200px;
+  margin-bottom: 20px;
 }

@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import VendingMachine from './VendingMachine';
+import Soda from './Soda';
+import Sardines from './Sardines';
+import Chips from './Chips';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Switch>
+          <Route path='/' exact>
+            <VendingMachine />
+          </Route>
+          <Route path='/soda' exact>
+            <Soda />
+          </Route>
+          <Route path='/chips' exact>
+            <Chips />
+          </Route>
+          <Route path='/sardines' exact>
+            <Sardines />
+          </Route>
+        </Switch>  
+      </BrowserRouter>
     </div>
   );
 }
